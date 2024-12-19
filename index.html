@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko" ng-app="app" ng-controller="neon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HBD QUOKKA</title>
+    <link
+      href="https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  </head>
+  <body>
+    <main class="{{color}}" ng-app="app" ng-controller="neon">
+      <div class="bg"></div>
+      <input
+        autofocus
+        id="focus"
+        class="input-text"
+        type="text"
+        name="userName"
+        ng-model="user.name"
+        ng-model-options="{ getterSetter: true }"
+      />
+
+      <div class="buttons">
+        <button class="btn-pink" ng-click="getColor('pink')"></button>
+        <button class="btn-yellow" ng-click="getColor('yellow')"></button>
+        <button class="btn-green" ng-click="getColor('green')"></button>
+        <button class="btn-blue" ng-click="getColor('blue')"></button>
+      </div>
+      <div class="wrapper no-drag">
+        <h1 class="font1">
+          <span ng-bind="user.name()"></span>
+          <h2 class="font2">made by h_n</h2>
+        </h1>
+        <br />
+        <br />
+        <br />
+        <h2 class="font3 clickable" onclick="location.href='letter.html'">
+          여기 클릭 해주세요.
+        </h2>
+      </div>
+    </main>
+
+    <!-- JavaScript 파일 연결 -->
+    <script src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="배달 왔습니다" />
+    <meta property="og:image" content="img/profile.png" />
+    <meta property="og:description" content="온리유 200일 축하해!" />
+    <title>letter</title>
+    <link
+      href="https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/first.css" />
+  </head>
+  <body>
+    <audio id="myAudio" controls loop onloadstart="this.volume=.4">
+      <source src="asset/video/생일축하.mp4" />
+    </audio>
+    <div class="letter-close">
+      <div
+        class="envelope"
+        onclick="open_letter(); document.getElementById('myAudio').play()"
+      ></div>
+      <h2 class="envelope-msg">잘 봐주셨으면 좋겠습니다!</h2>
+      <h2 class="envelope-msg">봉투 클릭 해주세요!</h2>
+    </div>
+    <div class="letter-open">
+      <div class="rtan"></div>
+      <h1>꼬까</h1>
+      <div class="messagebox">
+        생일 축하해 쿼카야! <br />
+        적어도 오늘만큼은 제일 행복한 하루였으면 해 <br />
+        <br />
+        이제 24년도 다 끝나가는데 올해 많이 웃게 해줘서 고마워 덕분에 멘탈도 잘
+        잡은거 같아!<br /><br />25년에도 잘 부탁해 !<br />롤링페이퍼도 적었으니
+        여기까지만 적을게 ㅋㅋ<br /><br /><span
+          class="button"
+          onclick="location.href='main.html';"
+          >눌러주세요</span
+        >
+      </div>
+    </div>
+    <script src="js/first.js"></script>
+  </body>
+</html>

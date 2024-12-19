@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="생일 축하해!" />
+    <!--  <meta property="og:url" content="kimquokka.dothome.co.kr" /> -->
+    <meta property="og:image" content="./asset/img/ogImg.png" />
+    <meta property="og:description" content="madeBy han_nun" />
+    <title>Q-POP</title>
+    <link
+      href="https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="asset/img/k-pop.png"
+    />
+
+    <!-- GSAP와 플러그인 로드 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <!-- 스타일 -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slide.css" />
+    <link rel="stylesheet" href="css/pop.css" />
+  </head>
+  <body>
+    <!-- 실제 콘텐츠 -->
+    <header class="header">
+      <nav>
+        <div class="logo">
+          <a href="main.html">
+            <img src="asset/img/Logo.png" draggable="false" alt="pageLogo" />
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li class="underLine">
+            <a href="https://ch.sooplive.co.kr/quokka1228" target="_blank"
+              >SOOP</a
+            >
+          </li>
+          <li class="underLine">
+            <a href="https://www.youtube.com/@김쿼카_1228" target="_blank"
+              >YOUTUBE</a
+            >
+          </li>
+          <li class="underLine">
+            <a href="https://ch.sooplive.co.kr/quokka1228/post/115330079"
+              >PROFILE + LINK</a
+            >
+          </li>
+          <li class="underLine">
+            <a href="song.html">노래 추천</a>
+          </li>
+          <li class="underLine">
+            <a href="#">CAFE였던것</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- 메인 섹션 -->
+    <main id="parallax__cont">
+      <section
+        id="section1"
+        class="parallax__item home"
+        style="
+          background-image: url(./asset/img/q-popBG.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div class="music">
+          <a href="index.html" id="main">메인 페이지</a>
+          <a href="k-pop.html" id="k-pop">K-POP</a>
+          <a href="pop.html" id="pop">POP</a>
+          <a href="j-pop.html" id="j-pop">J-POP</a>
+        </div>
+      </section>
+      <!-- //section1 -->
+
+      <section id="section2" class="parallax__item">
+        <div class="split-container">
+          <!-- 왼쪽 섹션 -->
+          <div class="left-section">
+            <svg
+              id="text-mask-svg1"
+              class="text-mask-svg1"
+              viewBox="0 0 800 650"
+              preserveAspectRatio="none"
+              width="100%"
+              height="100%"
+            >
+              <defs>
+                <clipPath id="text-mask1">
+                  <text
+                    x="50%"
+                    y="50%"
+                    dy=".35em"
+                    text-anchor="middle"
+                    id="text-element1"
+                    class="toggle-text"
+                  >
+                    Q
+                  </text>
+                </clipPath>
+              </defs>
+              <foreignObject
+                width="100%"
+                height="100%"
+                clip-path="url(#text-mask1)"
+              >
+                <video
+                  class="video"
+                  id="video-element1"
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                >
+                  <source src="asset/video/Bad.mp4" type="video/mp4" />
+                </video>
+              </foreignObject>
+            </svg>
+          </div>
+          <div class="right-section">
+            <p id="section2-p">
+              <span class="title">Bad</span><br />
+              <span class="subtitle">김쿼카</span><br />
+              <span class="lyrics"
+                >"Bad"는 사랑이 단순히 아름답고 이상적인 것이 아니라, 때로는
+                독처럼 해로울 수 있음을 노래합니다. 특히 서로에게 좋지 않다는 걸
+                알면서도 강렬한 끌림으로 인해 헤어나오지 못하는 관계의 이중성을
+                표현합니다. 이 곡은 이런 사랑의 복잡한 감정과 그로 인한 고통을
+                담담하면서도 강렬하게 전달하며, 듣는 이로 하여금 공감과 슬픔을
+                동시에 느끼게 합니다. <br /><br />
+                결국, "Bad"는 사랑의 아름다움만을 노래하는 것이 아니라, 사랑이
+                주는 아픔과 중독성을 이야기하며, 감정의 깊이를 탐구하는 곡이라고
+                할 수 있습니다.</span
+              >
+            </p>
+            <img src="asset/img/Q-QOK1.png" alt="" class="quo-k" />
+          </div>
+        </div>
+
+        <!-- 추가된 iframe과 배경 -->
+        <div class="video_bg" id="videoBg1">
+          <iframe
+            id="youtubePlayer1"
+            class="video-iframe iframe"
+            src="https://www.youtube.com/embed/Xx8-gceMTCU?enablejsapi=1&mute=1&autoplay=1&controls=0&cc_load_policy=0&cc_lang_pref=x&fs=1"
+            frameborder="0"
+            allow="autoplay; fullscreen; encrypted-media; pointer-events"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <!-- //section2 -->
+
+      <section id="section3" class="parallax__item">
+        <div class="split-container">
+          <!-- 왼쪽 섹션 -->
+          <div class="left-section">
+            <svg
+              viewBox="0 0 800 650"
+              class="text-mask-svg2"
+              id="text-mask-svg2"
+              preserveAspectRatio="none"
+              width="100%"
+              height="100%"
+            >
+              <defs>
+                <clipPath id="text-mask2">
+                  <text
+                    x="50%"
+                    y="50%"
+                    dy=".35em"
+                    text-anchor="middle"
+                    id="text-element2"
+                  >
+                    U
+                  </text>
+                </clipPath>
+              </defs>
+              <foreignObject
+                width="100%"
+                height="100%"
+                clip-path="url(#text-mask2)"
+              >
+                <video
+                  class="video"
+                  id="video-element2"
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                >
+                  <source src="asset/video/Login.mp4" type="video/mp4" />
+                </video>
+              </foreignObject>
+            </svg>
+          </div>
+          <!-- 오른쪽 섹션 -->
+          <div class="right-section">
+            <p id="section3-p">
+              <span class="title">Login</span><br />
+              <span class="subtitle">김쿼카X하쿠마</span><br />
+              <span class="lyrics"
+                >"LOGIN"은 가상 세계에 접속하는 행위를 통해 상대방과 깊은 연결을
+                추구하는 내용을 담고 있습니다. 이는 디지털 시대의 소통 방식을
+                반영하며, 상대의 마음에 접근하고자 하는 열망을 로그인이라는
+                행위로 표현하고 있습니다. 또한, 상대의 모든 것을 알고자 하는
+                호기심과 그와의 깊은 유대감을 형성하고자 하는 바람을 담고
+                있습니다. <br /><br />
+                이 곡은 우왁굳이 기획한 왁타버스 작곡캠프의 열두 번째 곡으로,
+                그의 독특한 세계관과 음악적 감성을 잘 보여주는 작품입니다.</span
+              >
+            </p>
+            <img src="asset/img/Q-QOK2.png" alt="" class="quo-k" />
+          </div>
+        </div>
+
+        <!-- 추가적인 콘텐츠, 클릭 동영상 -->
+        <div class="video_bg" id="videoBg2">
+          <iframe
+            id="youtubePlayer2"
+            class="video-iframe iframe"
+            src="https://www.youtube.com/embed/UEKG9VTU_RQ?enablejsapi=1&mute=1&autoplay=1&controls=0&cc_load_policy=0&cc_lang_pref=x&fs=1"
+            frameborder="0"
+            allow="autoplay; fullscreen; encrypted-media"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- //section3 -->
+
+      <section id="section4" class="parallax__item">
+        <div class="split-container">
+          <!-- 왼쪽 섹션 -->
+          <div class="left-section">
+            <svg
+              viewBox="0 0 800 650"
+              class="text-mask-svg3"
+              id="text-mask-svg3"
+              preserveAspectRatio="none"
+              width="100%"
+              height="100%"
+            >
+              <defs>
+                <clipPath id="text-mask3">
+                  <text
+                    x="50%"
+                    y="50%"
+                    dy=".35em"
+                    text-anchor="middle"
+                    id="text-element3"
+                  >
+                    O
+                  </text>
+                </clipPath>
+              </defs>
+              <foreignObject
+                width="100%"
+                height="100%"
+                clip-path="url(#text-mask3)"
+              >
+                <video id="video-element3" autoplay loop muted playsinline>
+                  <source
+                    src="asset/video/잠 깨워주는 버튜버.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </foreignObject>
+            </svg>
+          </div>
+          <!-- 오른쪽 섹션 -->
+          <div class="right-section">
+            <p id="section4-p">
+              <span class="title">잠 깨워주는 버튜버</span><br />
+              <span class="subtitle">김쿼카</span><br />
+              <span class="lyrics"
+                >2023년 10월 23일 미국 시절 영상 <br />
+                <br />내 방송 보면서 잠이 오냐고 하면서 주먹으로 때리는
+                쇼츠</span
+              >
+            </p>
+            <img src="asset/img/Q-QOK3.png" alt="" class="quo-k" />
+          </div>
+        </div>
+
+        <!-- 추가적인 콘텐츠, 클릭 동영상 -->
+        <div class="video_bg" id="videoBg3">
+          <iframe
+            id="youtubePlayer3"
+            class="video-iframe"
+            src="https://www.youtube.com/embed/C2pkvYn317Y?enablejsapi=1&mute=1&autoplay=1&controls=0&cc_load_policy=0&cc_lang_pref=x&fs=1&playlist=C2pkvYn317Y&loop=1"
+            frameborder="0"
+            allow="autoplay; fullscreen; encrypted-media"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <!-- //section4 -->
+
+      <section id="section5" class="parallax__item">
+        <div class="split-container">
+          <!-- 왼쪽 섹션 -->
+          <div class="left-section">
+            <svg
+              viewBox="0 0 800 650"
+              class="text-mask-svg4"
+              id="text-mask-svg4"
+              preserveAspectRatio="none"
+              width="100%"
+              height="100%"
+            >
+              <defs>
+                <clipPath id="text-mask4">
+                  <text
+                    x="50%"
+                    y="50%"
+                    dy=".35em"
+                    text-anchor="middle"
+                    id="text-element4"
+                  >
+                    K
+                  </text>
+                </clipPath>
+              </defs>
+              <foreignObject
+                width="100%"
+                height="100%"
+                clip-path="url(#text-mask4)"
+              >
+                <video id="video-element4" autoplay loop muted playsinline>
+                  <source
+                    src="asset/video/귀여워서 미안해.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </foreignObject>
+            </svg>
+          </div>
+          <!-- 오른쪽 섹션 -->
+          <div class="right-section">
+            <p id="section5-p">
+              <span class="title">귀여워서 미안해</span><br />
+              <span class="subtitle">김쿼카</span><br />
+              <span class="lyrics"
+                >2023년 2월 19일 미국 시절 영상<br /><br />키리누키 채널에
+                올라온 쇼츠이다.
+              </span>
+            </p>
+            <img src="asset/img/Q-QOK5.png" alt="" class="quo-k" />
+          </div>
+        </div>
+
+        <!-- 추가적인 콘텐츠, 클릭 동영상 -->
+        <div class="video_bg" id="videoBg4">
+          <iframe
+            id="youtubePlayer4"
+            class="video-iframe"
+            src="https://www.youtube.com/embed/P0wx0rrOnzI?enablejsapi=1&mute=1&autoplay=1&controls=0&cc_load_policy=0&cc_lang_pref=x&fs=1&playlist=P0wx0rrOnzI&loop=1"
+            frameborder="0"
+            allow="autoplay; fullscreen; encrypted-media"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <!-- //section5 -->
+
+      <section id="section6" class="parallax__item">
+        <div class="split-container">
+          <!-- 왼쪽 섹션 -->
+          <div class="left-section">
+            <svg
+              viewBox="0 0 800 650"
+              class="text-mask-svg5"
+              id="text-mask-svg5"
+              preserveAspectRatio="none"
+              width="100%"
+              height="100%"
+            >
+              <defs>
+                <clipPath id="text-mask5">
+                  <text
+                    x="50%"
+                    y="50%"
+                    dy=".35em"
+                    text-anchor="middle"
+                    id="text-element5"
+                  >
+                    K
+                  </text>
+                </clipPath>
+              </defs>
+              <foreignObject
+                width="100%"
+                height="100%"
+                clip-path="url(#text-mask5)"
+              >
+                <video id="video-element5" autoplay loop muted playsinline>
+                  <source src="asset/video/라면먹고갈래.mp4" type="video/mp4" />
+                </video>
+              </foreignObject>
+            </svg>
+          </div>
+          <!-- 오른쪽 섹션 -->
+          <div class="right-section">
+            <p id="section6-p">
+              <span class="title">라면 먹고 갈래?</span><br />
+              <span class="subtitle">김쿼카</span><br />
+              <span class="lyrics"
+                >24년 5월 2일 아프리카 시절 영상 <br /><br />오빠 나 자취하고 잘
+                취하는데~ 라면 먹고 갈래?</span
+              >
+            </p>
+            <img src="asset/img/Q-QOK6.png" alt="" class="quo-k" />
+          </div>
+        </div>
+
+        <!-- 추가적인 콘텐츠, 클릭 동영상 -->
+        <div class="video_bg" id="videoBg5">
+          <iframe
+            id="youtubePlayer5"
+            class="video-iframe"
+            src="https://www.youtube.com/embed/k_LImT3ChQ4?enablejsapi=1&mute=1&autoplay=1&controls=0&cc_load_policy=0&cc_lang_pref=x&fs=1&playlist=k_LImT3ChQ4&loop=1"
+            frameborder="0"
+            allow="autoplay; fullscreen; encrypted-media"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <!-- //section6 -->
+
+      <section id="section7" class="parallax__item">
+        <div class="split-container">
+          <!-- 왼쪽 섹션 -->
+          <div class="left-section">
+            <svg
+              viewBox="0 0 800 650"
+              class="text-mask-svg6"
+              id="text-mask-svg6"
+              preserveAspectRatio="none"
+              width="100%"
+              height="100%"
+            >
+              <defs>
+                <clipPath id="text-mask6">
+                  <text
+                    x="50%"
+                    y="50%"
+                    dy=".35em"
+                    text-anchor="middle"
+                    id="text-element6"
+                  >
+                    A
+                  </text>
+                </clipPath>
+              </defs>
+              <foreignObject
+                width="100%"
+                height="100%"
+                clip-path="url(#text-mask6)"
+              >
+                <video id="video-element6" autoplay loop muted playsinline>
+                  <source src="asset/video/거리에서.mp4" type="video/mp4" />
+                </video>
+              </foreignObject>
+            </svg>
+          </div>
+          <!-- 오른쪽 섹션 -->
+          <div class="right-section">
+            <p id="section7-p">
+              <span class="title">거리에서</span><br />
+              <span class="subtitle">김쿼카</span><br />
+              <span class="lyrics"
+                >유튜브에 처음으로 올라온 전체 곡 커버 영상이다.
+                <br /><br />"거리에서"는 사랑의 아름다움과 이별의 아픔을 동시에
+                담고 있는 곡입니다. 행복했던 추억은 여전히 마음속에 남아 있지만,
+                현실은 이별로 인해 더 이상 함께할 수 없는 상황을 보여줍니다.
+                <br /><br />
+                사랑이 끝난 후에도 잊지 못하고 상대방을 그리워하는 마음이,
+                거리라는 익숙한 공간을 통해 강렬하게 전달됩니다. 결국 이 곡은
+                "시간이 지나도 사랑했던 사람과의 추억을 잊지 못하는 화자의 진심
+                어린 고백"이라 할 수 있습니다.</span
+              >
+            </p>
+            <img src="asset/img/Q-QOK7.png" alt="" class="quo-k" />
+          </div>
+        </div>
+
+        <!-- 추가적인 콘텐츠, 클릭 동영상 -->
+        <div class="video_bg" id="videoBg6">
+          <iframe
+            id="youtubePlayer6"
+            class="video-iframe"
+            src="https://www.youtube.com/embed/JvW0ETgpfv0?enablejsapi=1&mute=1&autoplay=1&controls=0&cc_load_policy=0&cc_lang_pref=x&fs=1"
+            frameborder="0"
+            allow="autoplay; fullscreen; encrypted-media"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <!-- //section7 -->
+
+      <section id="section8" class="parallax__item">
+        <div>
+          <p class="thx"></p>
+          <div class="lastBtn">
+            <a href="main.html" class="button">메인 페이지 가기</a>
+            <a href="song.html" class="button">노래 페이지 가기</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- <script src="js/youtube.js"></script> -->
+    <!-- <script src="js/slide.js"></script>
+    <script src="js/section.js"></script>
+    <script src="js/multiple-text.js"></script> -->
+
+    <!-- <script src="js/btnSetting.js"></script> -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const loadingPage = document.getElementById("loading-page");
+
+        // 로딩 상태에서 x축 스크롤 잠금
+        document.body.classList.add("loading");
+
+        // 로딩이 끝난 후 처리
+        setTimeout(() => {
+          // 로딩 페이지 숨기기
+          loadingPage.style.display = "none";
+
+          // x축 스크롤 복구
+          document.body.classList.remove("loading");
+        }, 3000); // 3초 후 로딩 종료
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const masks = document.querySelectorAll("[id^='text-mask-svg']");
+
+        masks.forEach((mask, index) => {
+          const sectionNumber = index + 1;
+          const iframe = document.querySelector(
+            `#youtubePlayer${sectionNumber}`
+          );
+          const textElement = mask.querySelector("text"); // 텍스트 요소 선택
+
+          if (iframe && textElement) {
+            textElement.style.pointerEvents = "auto";
+            textElement.style.cursor = "pointer";
+
+            textElement.addEventListener("click", function () {
+              iframe.classList.toggle("hidden"); // 표시/숨김 토글
+            });
+          }
+        });
+      });
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

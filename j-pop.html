@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="J-POP Playlist" />
+    <!--  <meta property="og:url" content="kimquokka.dothome.co.kr" /> -->
+    <meta property="og:image" content="./asset/img/ogImg.png" />
+    <meta property="og:description" content="madeBy han_nun" />
+    <title>J-POP</title>
+    <link
+      href="https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="asset/img/bigj-pop.png"
+    />
+
+    <!-- GSAP와 플러그인 로드 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <!-- 스타일 -->
+    <link rel="stylesheet" href="css/slide.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/pop.css" />
+  </head>
+  <body>
+    <!-- 실제 콘텐츠 -->
+    <header class="header">
+      <nav>
+        <div class="logo">
+          <a href="main.html">
+            <img src="asset/img/Logo.png" draggable="false" alt="pageLogo" />
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li class="underLine">
+            <a href="https://ch.sooplive.co.kr/quokka1228" target="_blank"
+              >SOOP</a
+            >
+          </li>
+          <li class="underLine">
+            <a href="https://www.youtube.com/@김쿼카_1228" target="_blank"
+              >YOUTUBE</a
+            >
+          </li>
+          <li class="underLine">
+            <a href="https://ch.sooplive.co.kr/quokka1228/post/115330079"
+              >PROFILE + LINK</a
+            >
+          </li>
+          <li class="underLine">
+            <a href="song.html">노래 추천</a>
+          </li>
+          <li class="underLine">
+            <a href="#">CAFE였던것</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- 메인 섹션 -->
+    <main id="parallax__cont">
+      <section
+        id="section1"
+        class="parallax__item"
+        style="
+          background-image: url(./asset/img/j-popBG.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div class="music">
+          <a href="index.html" id="main-j">메인 페이지</a>
+          <a href="q-pop.html" id="q-pop-j">쿼카 노래, 클립</a>
+          <a href="k-pop.html" id="k-pop-j">K-POP</a>
+          <a href="pop.html" id="pop-j">POP</a>
+        </div>
+      </section>
+      <!-- //section1 -->
+
+      <section id="section2" class="parallax__item">
+        <div class="split-container">
+          <!-- 왼쪽 섹션 -->
+          <div class="left-section">
+            <svg
+              id="text-mask-svg1"
+              class="text-mask-svg1"
+              viewBox="0 0 800 650"
+              preserveAspectRatio="none"
+              width="100%"
+              height="100%"
+            >
+              <defs>
+                <clipPath id="text-mask1">
+                  <text
+                    x="50%"
+                    y="50%"
+                    dy=".35em"
+                    text-anchor="middle"
+                    id="text-element1"
+                    class="toggle-text"
+                  >
+                    誕
+                  </text>
+                </clipPath>
+              </defs>
+              <foreignObject
+                width="100%"
+                height="100%"
+                clip-path="url(#text-mask1)"
+              >
+                <video
+                  class="video"
+                  id="video-element1"
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                >
+                  <source src="asset/video/fragrance.mp4" type="video/mp4" />
+                </video>
+              </foreignObject>
+            </svg>
+          </div>
+          <div class="right-section">
+            <p id="section2-p">
+              <span class="title">フレグランス(fragrance)</span><br />
+              <span class="subtitle">mahiru, RINZO</span><br />
+              <span class="lyrics"
+                >이 곡은 떠나간 연인을 향한 미련과 그리움을 아름답게 표현하고
+                있습니다. 특히, '향기'라는 소재는 사랑했던 기억을 환기하는
+                중요한 상징으로 사용되며, 잊혀지지 않는 추억과 감정을 더욱
+                강렬하게 느끼게 합니다. <br />
+                <br />이별을 받아들일 수 없다는 마음과 다시 사랑하고 싶다는
+                간절한 바람이 곡 전체를 관통하는 주제입니다.</span
+              >
+            </p>
+            <img src="asset/img/J-QOK1.png" alt="" class="quo-k" />
+          </div>
+        </div>
+
+        <!-- 추가된 iframe과 배경 -->
+        <div class="video_bg" id="videoBg1">
+          <iframe
+            id="youtubePlayer1"
+            class="video-iframe iframe"
+            src="https://www.youtube.com/embed/P6WmLAMuaeM?enablejsapi=1&mute=1&autoplay=1&controls=0&cc_load_policy=0&cc_lang_pref=x&fs=1"
+            frameborder="0"
+            allow="autoplay; fullscreen; encrypted-media; pointer-events"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <!-- //section2 -->
+
+      <section id="section3" class="parallax__item">
+        <div class="split-container">
+          <!-- 왼쪽 섹션 -->
+          <div class="left-section">
+            <svg
+              viewBox="0 0 800 650"
+              class="text-mask-svg2"
+              id="text-mask-svg2"
+              preserveAspectRatio="none"
+              width="100%"
+              height="100%"
+            >
+              <defs>
+                <clipPath id="text-mask2">
+                  <text
+                    x="50%"
+                    y="50%"
+                    dy=".35em"
+                    text-anchor="middle"
+                    id="text-element2"
+                  >
+                    生
+                  </text>
+                </clipPath>
+              </defs>
+              <foreignObject
+                width="100%"
+                height="100%"
+                clip-path="url(#text-mask2)"
+              >
+                <video
+                  class="video"
+                  id="video-element2"
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                >
+                  <source src="asset/video/orange.mp4" type="video/mp4" />
+                </video>
+              </foreignObject>
+            </svg>
+          </div>
+          <!-- 오른쪽 섹션 -->
+          <div class="right-section">
+            <p id="section3-p">
+              <span class="title">Orange</span><br />
+              <span class="subtitle">SPYAIR</span><br />
+              <span class="lyrics"
+                >떠난 사람에 대한 아쉬움과 그리움을 담고 있지만, 동시에 그
+                사람이 남긴 소중한 추억과 사랑 덕분에 앞으로 나아갈 힘을
+                얻었다는 긍정적인 메시지를 전달합니다. 주황색(Orange)은 따뜻함과
+                석양의 아름다움을 상징하며, 가사 속에서 시간과 공간을 넘어 변치
+                않는 사랑의 상징으로 사용되고 있습니다. <br />
+                <br />이 곡은 이별을 경험한 사람들에게 공감과 위로를 전하며,
+                떠난 사람에 대한 고마움과 사랑을 되새기게 합니다.</span
+              >
+            </p>
+            <img src="asset/img/J-QOK2.png" alt="" class="quo-k" />
+          </div>
+        </div>
+
+        <!-- 추가적인 콘텐츠, 클릭 동영상 -->
+        <div class="video_bg" id="videoBg2">
+          <iframe
+            id="youtubePlayer2"
+            class="video-iframe iframe"
+            src="https://www.youtube.com/embed/ENaeyFPC3hA?enablejsapi=1&mute=1&autoplay=1&controls=0&cc_load_policy=0&cc_lang_pref=x&fs=1"
+            frameborder="0"
+            allow="autoplay; fullscreen; encrypted-media"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- //section3 -->
+
+      <section id="section4" class="parallax__item">
+        <div class="split-container">
+          <!-- 왼쪽 섹션 -->
+          <div class="left-section">
+            <svg
+              viewBox="0 0 800 650"
+              class="text-mask-svg3"
+              id="text-mask-svg3"
+              preserveAspectRatio="none"
+              width="100%"
+              height="100%"
+            >
+              <defs>
+                <clipPath id="text-mask3">
+                  <text
+                    x="50%"
+                    y="50%"
+                    dy=".35em"
+                    text-anchor="middle"
+                    id="text-element3"
+                  >
+                    日
+                  </text>
+                </clipPath>
+              </defs>
+              <foreignObject
+                width="100%"
+                height="100%"
+                clip-path="url(#text-mask3)"
+              >
+                <video id="video-element3" autoplay loop muted playsinline>
+                  <source src="asset/video/夜明けと蛍.mp4" type="video/mp4" />
+                </video>
+              </foreignObject>
+            </svg>
+          </div>
+          <!-- 오른쪽 섹션 -->
+          <div class="right-section">
+            <p id="section4-p">
+              <span class="title">夜明けと蛍(Yoake to hotaru)</span><br />
+              <span class="subtitle">Rokudenashi</span><br />
+              <span class="lyrics"
+                >잊혀진 과거와 사라져간 사랑을 그리워하는 노래입니다. "새벽"은
+                어둠에서 빛으로 넘어가는 전환점이자 희망의 상징으로, "반딧불"은
+                희미하지만 따뜻한 기억을 나타냅니다. <br />
+                <br />노래 속 화자는 사랑했던 사람을 떠올리며 그리워하지만, 그
+                기억은 점차 희미해지고 있습니다. 동시에 새벽이 찾아오듯 작은
+                희망도 느껴지며, 감정의 혼란과 애틋함이 교차합니다. <br />
+                <br />이 곡은 슬픔과 아름다움을 동시에 느낄 수 있는
+                가사입니다.</span
+              >
+            </p>
+            <img src="asset/img/J-QOK3.png" alt="" class="quo-k" />
+          </div>
+        </div>
+
+        <!-- 추가적인 콘텐츠, 클릭 동영상 -->
+        <div class="video_bg" id="videoBg3">
+          <iframe
+            id="youtubePlayer3"
+            class="video-iframe"
+            src="https://www.youtube.com/embed/ECZ3-4BYkkg?enablejsapi=1&mute=1&autoplay=1&controls=0&cc_load_policy=0&cc_lang_pref=x&fs=1"
+            frameborder="0"
+            allow="autoplay; fullscreen; encrypted-media"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <!-- //section4 -->
+
+      <section id="section5" class="parallax__item">
+        <div class="split-container">
+          <!-- 왼쪽 섹션 -->
+          <div class="left-section">
+            <svg
+              viewBox="0 0 800 650"
+              class="text-mask-svg4"
+              id="text-mask-svg4"
+              preserveAspectRatio="none"
+              width="100%"
+              height="100%"
+            >
+              <defs>
+                <clipPath id="text-mask4">
+                  <text
+                    x="50%"
+                    y="50%"
+                    dy=".35em"
+                    text-anchor="middle"
+                    id="text-element4"
+                  >
+                    祝
+                  </text>
+                </clipPath>
+              </defs>
+              <foreignObject
+                width="100%"
+                height="100%"
+                clip-path="url(#text-mask4)"
+              >
+                <video id="video-element4" autoplay loop muted playsinline>
+                  <source src="asset/video/Button.mp4" type="video/mp4" />
+                </video>
+              </foreignObject>
+            </svg>
+          </div>
+          <!-- 오른쪽 섹션 -->
+          <div class="right-section">
+            <p id="section5-p">
+              <span class="title">Button</span><br />
+              <span class="subtitle">PENGUIN RESEARCH</span><br />
+              <span class="lyrics"
+                >현실의 어려움과 고민을 마주하면서도, 앞으로 나아가기 위해
+                결단하고 행동해야 한다는 메시지를 담고 있습니다. <br />
+                <br />1. "버튼"은 인생에서 중요한 선택의 순간과 새로운 시작을
+                상징합니다. <br />
+                <br />2. 망설임과 두려움 속에서도, "지켜야 할 것"과 "믿는
+                미래"를 위해 나아가는 용기를 강조합니다. <br />
+                <br />3. 이 곡은 꿈을 향한 도전과 자기 확신의 중요성을 노래하며,
+                듣는 이들에게 큰 에너지를 전달합니다. <br />
+                이 곡은 특히 꿈을 이루기 위해 고군분투하거나 중요한 선택을 앞둔
+                사람들에게 강한 공감을 불러일으킵니다.</span
+              >
+            </p>
+            <img src="asset/img/J-QOK4.png" alt="" class="quo-k" />
+          </div>
+        </div>
+
+        <!-- 추가적인 콘텐츠, 클릭 동영상 -->
+        <div class="video_bg" id="videoBg4">
+          <iframe
+            id="youtubePlayer4"
+            class="video-iframe"
+            src="https://www.youtube.com/embed/0iEqwPC_Lac?enablejsapi=1&mute=1&autoplay=1&controls=0&cc_load_policy=0&cc_lang_pref=x&fs=1"
+            frameborder="0"
+            allow="autoplay; fullscreen; encrypted-media"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <!-- //section5 -->
+
+      <section id="section6" class="parallax__item">
+        <div class="split-container">
+          <!-- 왼쪽 섹션 -->
+          <div class="left-section">
+            <svg
+              viewBox="0 0 800 650"
+              class="text-mask-svg5"
+              id="text-mask-svg5"
+              preserveAspectRatio="none"
+              width="100%"
+              height="100%"
+            >
+              <defs>
+                <clipPath id="text-mask5">
+                  <text
+                    x="50%"
+                    y="50%"
+                    dy=".35em"
+                    text-anchor="middle"
+                    id="text-element5"
+                  >
+                    う
+                  </text>
+                </clipPath>
+              </defs>
+              <foreignObject
+                width="100%"
+                height="100%"
+                clip-path="url(#text-mask5)"
+              >
+                <video id="video-element5" autoplay loop muted playsinline>
+                  <source src="asset/video/インフェルノ.mp4" type="video/mp4" />
+                </video>
+              </foreignObject>
+            </svg>
+          </div>
+          <!-- 오른쪽 섹션 -->
+          <div class="right-section">
+            <p id="section6-p">
+              <span class="title">インフェルノ(Inferno)</span><br />
+              <span class="subtitle">Mrs.GREEN APPLE</span><br />
+              <span class="lyrics"
+                >"インフェルノ (Inferno)"는 생명을 불꽃에 비유하며, 강렬하게
+                살아가라는 메시지를 전합니다. <br />
+                <br />1. "불꽃"과 "불씨"는 우리의 감정과 열정, 그리고 삶의
+                에너지를 상징합니다. <br />
+                <br />2. 삶에서 마주하는 두려움과 도전에 굴하지 않고, 계속
+                앞으로 나아가야 한다는 강렬한 의지를 담고 있습니다. <br />
+                <br />3. "망설임 없이 나아가라"는 반복되는 가사는 곡의 중심
+                주제를 명확히 드러내며, 듣는 이들에게 큰 용기와 결단력을
+                요구합니다. <br /><br />이 곡은 특히 어려움 속에서도 자신의 삶을
+                불태우며 살아가는 사람들에게 큰 공감과 에너지를 줄 수 있는
+                메시지로 가득합니다. 불꽃 소방대와 완벽히 어우러지는 주제와
+                에너지로 인해 애니메이션의 상징적인 곡으로 자리잡았습니다.</span
+              >
+            </p>
+            <img src="asset/img/J-QOK5.png" alt="" class="quo-k" />
+          </div>
+        </div>
+
+        <!-- 추가적인 콘텐츠, 클릭 동영상 -->
+        <div class="video_bg" id="videoBg5">
+          <iframe
+            id="youtubePlayer5"
+            class="video-iframe"
+            src="https://www.youtube.com/embed/wfCcs0vLysk?enablejsapi=1&mute=1&autoplay=1&controls=0&cc_load_policy=0&cc_lang_pref=x&fs=1"
+            frameborder="0"
+            allow="autoplay; fullscreen; encrypted-media"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <!-- //section6 -->
+
+      <section id="section7" class="parallax__item">
+        <div class="split-container">
+          <!-- 왼쪽 섹션 -->
+          <div class="left-section">
+            <svg
+              viewBox="0 0 800 650"
+              class="text-mask-svg6"
+              id="text-mask-svg6"
+              preserveAspectRatio="none"
+              width="100%"
+              height="100%"
+            >
+              <defs>
+                <clipPath id="text-mask6">
+                  <text
+                    x="50%"
+                    y="50%"
+                    dy=".35em"
+                    text-anchor="middle"
+                    id="text-element6"
+                  >
+                    !
+                  </text>
+                </clipPath>
+              </defs>
+              <foreignObject
+                width="100%"
+                height="100%"
+                clip-path="url(#text-mask6)"
+              >
+                <video id="video-element6" autoplay loop muted playsinline>
+                  <source src="asset/video/refrain.mp4" type="video/mp4" />
+                </video>
+              </foreignObject>
+            </svg>
+          </div>
+          <!-- 오른쪽 섹션 -->
+          <div class="right-section">
+            <p id="section7-p">
+              <span class="title">Ref:rain</span><br />
+              <span class="subtitle">Aimer</span><br />
+              <span class="lyrics"
+                >"Ref:rain"은 사랑과 이별의 복잡한 감정을 빗속에서 표현한
+                곡입니다. <br /><br />1. 비는 곡 전반에서 상처와 아픔, 그리고
+                이별의 눈물을 상징하며, 동시에 감정을 씻어내는 치유와 재생의
+                가능성을 내포합니다. <br /><br />2. 시간을 멈추고 싶다는
+                간절함은 사랑하는 이를 떠나보낼 수 없다는 화자의 마음을
+                드러냅니다. <br /><br />3. 그러나 곡 후반부에서 비가 멈추고
+                아침이 온다는 가사는 결국 상처를 극복하고 새로운 시작을 향해
+                나아가야 함을 암시합니다. <br />
+                <br />이 곡은 이별의 슬픔과 그 안에서 피어나는 아름다움을
+                섬세하게 담아내며, 듣는 이들에게 깊은 공감을 이끌어냅니다.
+                Aimer의 특유의 감성적이고 강렬한 보컬이 곡의 분위기를 더욱
+                고조시키며, 사랑과 아픔의 여운을 선사합니다.</span
+              >
+            </p>
+            <img src="asset/img/J-QOK6.png" alt="" class="quo-k" />
+          </div>
+        </div>
+
+        <!-- 추가적인 콘텐츠, 클릭 동영상 -->
+        <div class="video_bg" id="videoBg6">
+          <iframe
+            id="youtubePlayer6"
+            class="video-iframe"
+            src="https://www.youtube.com/embed/mvkbCZfwWzA?enablejsapi=1&mute=1&autoplay=1&controls=0&cc_load_policy=0&cc_lang_pref=x&fs=1"
+            frameborder="0"
+            allow="autoplay; fullscreen; encrypted-media"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <!-- //section7 -->
+
+      <section id="section8" class="parallax__item">
+        <div>
+          <p class="thx"></p>
+          <div class="lastBtn">
+            <a href="main.html" class="button">메인 페이지 가기</a>
+            <a href="song.html" class="button">노래 페이지 가기</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- <script src="js/youtube.js"></script> -->
+    <!-- <script src="js/slide.js"></script>
+    <script src="js/section.js"></script>
+    <script src="js/multiple-text.js"></script> -->
+
+    <!-- <script src="js/btnSetting.js"></script> -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const loadingPage = document.getElementById("loading-page");
+
+        // 로딩 상태에서 x축 스크롤 잠금
+        document.body.classList.add("loading");
+
+        // 로딩이 끝난 후 처리
+        setTimeout(() => {
+          // 로딩 페이지 숨기기
+          loadingPage.style.display = "none";
+
+          // x축 스크롤 복구
+          document.body.classList.remove("loading");
+        }, 3000); // 3초 후 로딩 종료
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const masks = document.querySelectorAll("[id^='text-mask-svg']");
+
+        masks.forEach((mask, index) => {
+          const sectionNumber = index + 1;
+          const iframe = document.querySelector(
+            `#youtubePlayer${sectionNumber}`
+          );
+          const textElement = mask.querySelector("text"); // 텍스트 요소 선택
+
+          if (iframe && textElement) {
+            textElement.style.pointerEvents = "auto";
+            textElement.style.cursor = "pointer";
+
+            textElement.addEventListener("click", function () {
+              iframe.classList.toggle("hidden"); // 표시/숨김 토글
+            });
+          }
+        });
+      });
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

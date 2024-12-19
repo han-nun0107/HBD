@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="생일 축하해!" />
+    <!--  <meta property="og:url" content="kimquokka.dothome.co.kr" /> -->
+    <meta property="og:image" content="./asset/img/ogImg.png" />
+    <meta property="og:description" content="madeBy han_nun" />
+    <title>Happy Birthday!</title>
+    <link
+      href="https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="asset/img/main.png" />
+
+    <!-- GSAP와 플러그인 로드 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <!-- 스타일 -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slide.css" />
+  </head>
+  <body>
+    <!-- 로딩 페이지 -->
+    <div id="loading-page">
+      <div class="spinner"></div>
+      <div class="loading-div">
+        <p class="loading-p">로딩 중</p>
+        <p class="loading-p">조금만 기다려 주세요.</p>
+      </div>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+    </div>
+
+    <!-- 실제 콘텐츠 -->
+    <header class="header">
+      <nav>
+        <div class="logo">
+          <a href="main.html">
+            <img src="asset/img/Logo.png" draggable="false" alt="pageLogo" />
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li class="underLine">
+            <a href="https://ch.sooplive.co.kr/quokka1228" target="_blank"
+              >SOOP</a
+            >
+          </li>
+          <li class="underLine">
+            <a href="https://www.youtube.com/@김쿼카_1228" target="_blank"
+              >YOUTUBE</a
+            >
+          </li>
+          <li class="underLine">
+            <a href="https://ch.sooplive.co.kr/quokka1228/post/115330079"
+              >PROFILE + LINK</a
+            >
+          </li>
+          <li class="underLine">
+            <a href="song.html">노래 추천</a>
+          </li>
+          <li class="underLine">
+            <a href="#">CAFE였던것</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- 메인 섹션 -->
+    <main id="parallax__cont">
+      <section id="section1" class="parallax__item">
+        <div class="left-section">
+          <video id="section1-video" autoplay loop muted playsinline>
+            <source src="asset/video/제리.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="right-section right-section-font">
+          <p id="section1-p" style="color: #4d4d4d">
+            <strong style="font-size: 40px; color: red">사용 설명</strong><br />
+            1. <span style="color: red">마우스 휠 or 스페이스 바</span>를
+            누르시면 옆 페이지로 넘어갈 수 있습니다!<br />
+            <br />2. 화면 비율은 <strong style="color: red">100%</strong>로
+            맞춰주세요! (ctrl + 마우스 휠)<br />
+            <br />3. 메인 페이지는 보고 계시는 페이지 포함 총 8개로 준비되어
+            있습니다.<br />
+            <br />4. 각 페이지에는
+            <span style="color: red">영상 나오는 영어</span> 있는데 클릭 시
+            영상이 켜집니다.<br />
+            <br />
+            5. 만약 동영상이 안 나온다면 ctrl + shift + R를 눌러주세요!<br />
+            <br />6. 영상은 유튜브와 직접 연결한 것으로
+            <strong style="color: red">저작권 문제는 없습니다.</strong> (유튜브
+            퍼가기 기능 사용)<br />
+            <br />
+            7. 부족한 실력이지만 잘 봐주셨으면 좋겠습니다! 감사합니다!
+            <br />
+            <br />
+            8. 마지막으로 <strong>🎉생일 축하해🎉</strong> 쿼카야!
+          </p>
+        </div>
+      </section>
+
+      <!-- //section1 -->
+      <section id="section2" class="parallax__item">
+        <div class="split-container">
+          <!-- 왼쪽 섹션 -->
+          <div class="left-section">
+            <svg
+              id="text-mask-svg1"
+              class="text-mask-svg1"
+              viewBox="0 0 800 650"
+              preserveAspectRatio="none"
+              width="100%"
+              height="100%"
+            >
+              <defs>
+                <clipPath id="text-mask1">
+                  <text
+                    x="50%"
+                    y="50%"
+                    dy=".35em"
+                    text-anchor="middle"
+                    id="text-element1"
+                    class="toggle-text"
+                  >
+                    Q
+                  </text>
+                </clipPath>
+              </defs>
+              <foreignObject
+                width="100%"
+                height="100%"
+                clip-path="url(#text-mask1)"
+              >
+                <video
+                  class="video"
+                  id="video-element1"
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                >
+                  <source
+                    src="asset/video/Happy Birthday.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </foreignObject>
+            </svg>
+          </div>
+          <div class="right-section right-section-font">
+            <p id="section2-p" class="main-p">
+              Happy Birthday <br />
+              <span class="sub-p">Ra.D</span>
+            </p>
+            <img src="asset/img/QOK-1.png" alt="" class="quo" />
+          </div>
+        </div>
+
+        <!-- 추가된 iframe과 배경 -->
+        <div class="video_bg" id="videoBg1">
+          <iframe
+            id="youtubePlayer1"
+            class="video-iframe iframe"
+            src="https://www.youtube.com/embed/qWvFhYWwFQw?enablejsapi=1&mute=1&autoplay=1&controls=0&cc_load_policy=0"
+            frameborder="0"
+            allow="autoplay; fullscreen; encrypted-media;"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- //section2 -->
+      <section id="section3" class="parallax__item">
+        <div class="split-container">
+          <!-- 왼쪽 섹션 -->
+          <div class="left-section">
+            <svg
+              viewBox="0 0 800 650"
+              class="text-mask-svg2"
+              id="text-mask-svg2"
+              preserveAspectRatio="none"
+              width="100%"
+              height="100%"
+            >
+              <defs>
+                <clipPath id="text-mask2">
+                  <text
+                    x="50%"
+                    y="50%"
+                    dy=".35em"
+                    text-anchor="middle"
+                    id="text-element2"
+                  >
+                    U
+                  </text>
+                </clipPath>
+              </defs>
+              <foreignObject
+                width="100%"
+                height="100%"
+                clip-path="url(#text-mask2)"
+              >
+                <video
+                  class="video"
+                  id="video-element2"
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                >
+                  <source
+                    src="asset/video/개난장판 싱크룸.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </foreignObject>
+            </svg>
+          </div>
+          <!-- 오른쪽 섹션 -->
+          <div class="right-section right-section-font">
+            <p id="section3-p" class="main-p">
+              개난장판 싱크룸 ㅋㅋ <br /><span class="sub-p"
+                >With. 쫄랑, 갈푸짱, 한아련</span
+              >
+              <br />
+            </p>
+            <img src="asset/img/QOK1.png" alt="" class="quo" />
+          </div>
+        </div>
+
+        <!-- 추가적인 콘텐츠, 클릭 동영상 -->
+        <div class="video_bg" id="videoBg2">
+          <iframe
+            id="youtubePlayer2"
+            class="video-iframe iframe"
+            src="https://www.youtube.com/embed/lziybTQgHPs?enablejsapi=1&mute=1&autoplay=1&controls=0&cc_load_policy=0&cc_lang_pref=x&fs=1"
+            frameborder="0"
+            allow="autoplay; fullscreen; encrypted-media"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- //section3 -->
+      <section id="section4" class="parallax__item">
+        <div class="split-container">
+          <!-- 왼쪽 섹션 -->
+          <div class="left-section">
+            <svg
+              viewBox="0 0 800 650"
+              class="text-mask-svg3"
+              id="text-mask-svg3"
+              preserveAspectRatio="none"
+              width="100%"
+              height="100%"
+            >
+              <defs>
+                <clipPath id="text-mask3">
+                  <text
+                    x="50%"
+                    y="50%"
+                    dy=".35em"
+                    text-anchor="middle"
+                    id="text-element3"
+                  >
+                    O
+                  </text>
+                </clipPath>
+              </defs>
+              <foreignObject
+                width="100%"
+                height="100%"
+                clip-path="url(#text-mask3)"
+              >
+                <video
+                  class="video"
+                  id="video-element3"
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                >
+                  <source
+                    src="asset/video/공포가 뭐죠 ㅋ (취함).mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </foreignObject>
+            </svg>
+          </div>
+          <!-- 오른쪽 섹션 -->
+          <div class="right-section right-section-font">
+            <p id="section4-p" class="main-p">공포가 뭐죠 ㅋ (취함) <br /></p>
+            <img src="asset/img/QOK2.png" alt="" class="quo" />
+          </div>
+        </div>
+
+        <!-- 추가적인 콘텐츠, 클릭 동영상 -->
+        <div class="video_bg" id="videoBg3">
+          <iframe
+            id="youtubePlayer3"
+            class="video-iframe"
+            src="https://www.youtube.com/embed/eISuRX6siCs?enablejsapi=1&mute=1&autoplay=1&controls=0&cc_load_policy=0&cc_lang_pref=x&fs=1"
+            frameborder="0"
+            allow="autoplay; fullscreen; encrypted-media"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- //section4 -->
+      <section id="section5" class="parallax__item">
+        <div class="split-container">
+          <!-- 왼쪽 섹션 -->
+          <div class="left-section">
+            <svg
+              viewBox="0 0 800 650"
+              class="text-mask-svg4"
+              id="text-mask-svg4"
+              preserveAspectRatio="none"
+              width="100%"
+              height="100%"
+            >
+              <defs>
+                <clipPath id="text-mask4">
+                  <text
+                    x="50%"
+                    y="50%"
+                    dy=".35em"
+                    text-anchor="middle"
+                    id="text-element4"
+                  >
+                    K
+                  </text>
+                </clipPath>
+              </defs>
+              <foreignObject
+                width="100%"
+                height="100%"
+                clip-path="url(#text-mask4)"
+              >
+                <video
+                  class="video"
+                  id="video-element4"
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                >
+                  <source
+                    src="asset/video/아름다운 나라 국악ver..mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </foreignObject>
+            </svg>
+          </div>
+          <!-- 오른쪽 섹션 -->
+          <div class="right-section right-section-font">
+            <p id="section5-p" class="main-p">
+              아름다운 나라 국악 ver. <br /><span class="sub-p"
+                >With. 토뤼, 비쥬</span
+              ><br />
+            </p>
+            <img src="asset/img/QOK3.png" alt="" class="quo-m" />
+          </div>
+        </div>
+
+        <!-- 추가적인 콘텐츠, 클릭 동영상 -->
+        <div class="video_bg" id="videoBg4">
+          <iframe
+            id="youtubePlayer4"
+            class="video-iframe"
+            src="https://www.youtube.com/embed/DmfZ5LbKc-c?enablejsapi=1&mute=1&autoplay=1&controls=0&cc_load_policy=0&cc_lang_pref=x&fs=1"
+            frameborder="0"
+            allow="autoplay; fullscreen; encrypted-media"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- //section5 -->
+      <section id="section6" class="parallax__item">
+        <div class="split-container">
+          <!-- 왼쪽 섹션 -->
+          <div class="left-section">
+            <svg
+              viewBox="0 0 800 650"
+              class="text-mask-svg5"
+              id="text-mask-svg5"
+              preserveAspectRatio="none"
+              width="100%"
+              height="100%"
+            >
+              <defs>
+                <clipPath id="text-mask5">
+                  <text
+                    x="50%"
+                    y="50%"
+                    dy=".35em"
+                    text-anchor="middle"
+                    id="text-element5"
+                  >
+                    K
+                  </text>
+                </clipPath>
+              </defs>
+              <foreignObject
+                width="100%"
+                height="100%"
+                clip-path="url(#text-mask5)"
+              >
+                <video
+                  class="video"
+                  id="video-element5"
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                >
+                  <source
+                    src="asset/video/쿼카가 찾아왔다굿!.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </foreignObject>
+            </svg>
+          </div>
+          <!-- 오른쪽 섹션 -->
+          <div class="right-section right-section-font">
+            <p id="section6-p" class="main-p">쿼카가 찾아왔다굿!⭐ <br /></p>
+            <img src="asset/img/QOK4.png" alt="" class="quo" />
+          </div>
+        </div>
+
+        <!-- 추가적인 콘텐츠, 클릭 동영상 -->
+        <div class="video_bg" id="videoBg5">
+          <iframe
+            id="youtubePlayer5"
+            class="video-iframe"
+            src="https://www.youtube.com/embed/zn-IGMqSnpQ?enablejsapi=1&mute=1&autoplay=1&controls=0&cc_load_policy=0&cc_lang_pref=x&fs=1"
+            frameborder="0"
+            allow="autoplay; fullscreen; encrypted-media"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- //section6 -->
+      <section id="section7" class="parallax__item">
+        <div class="split-container">
+          <!-- 왼쪽 섹션 -->
+          <div class="left-section">
+            <svg
+              viewBox="0 0 800 650"
+              class="text-mask-svg6"
+              id="text-mask-svg6"
+              preserveAspectRatio="none"
+              width="100%"
+              height="100%"
+            >
+              <defs>
+                <clipPath id="text-mask6">
+                  <text
+                    x="50%"
+                    y="50%"
+                    dy=".35em"
+                    text-anchor="middle"
+                    id="text-element6"
+                  >
+                    A
+                  </text>
+                </clipPath>
+              </defs>
+              <foreignObject
+                width="100%"
+                height="100%"
+                clip-path="url(#text-mask6)"
+              >
+                <video
+                  class="video"
+                  id="video-element6"
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                >
+                  <source
+                    src="asset/video/흔한 버튜버의 팬미팅.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </foreignObject>
+            </svg>
+          </div>
+          <!-- 오른쪽 섹션 -->
+          <div class="right-section right-section-font">
+            <p id="section7-p" class="main-p">흔한 버튜버의 팬미팅 <br /></p>
+            <img src="asset/img/QOK5.png" alt="" class="quo" />
+          </div>
+        </div>
+
+        <!-- 추가적인 콘텐츠, 클릭 동영상 -->
+        <div class="video_bg" id="videoBg6">
+          <iframe
+            id="youtubePlayer6"
+            class="video-iframe"
+            src="https://www.youtube.com/embed/vykjLKOq9IA?enablejsapi=1&mute=1&autoplay=1&controls=0&cc_load_policy=0&cc_lang_pref=x&fs=1"
+            frameborder="0"
+            allow="autoplay; fullscreen; encrypted-media"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- //section7 -->
+      <section id="section8" class="parallax__item">
+        <div>
+          <p class="thx"></p>
+          <div class="lastBtn">
+            <a href="main.html" class="button">처음으로 돌아가기</a>
+            <a href="song.html" class="button">노래 추천으로 가기</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- <script src="js/youtube.js"></script> -->
+    <!-- <script src="js/slide.js"></script>
+    <script src="js/section.js"></script>
+    <script src="js/multiple-text.js"></script> -->
+
+    <!-- <script src="js/btnSetting.js"></script> -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const loadingPage = document.getElementById("loading-page");
+
+        // 로딩 상태에서 x축 스크롤 잠금
+        document.body.classList.add("loading");
+
+        // 로딩이 끝난 후 처리
+        setTimeout(() => {
+          // 로딩 페이지 숨기기
+          loadingPage.style.display = "none";
+
+          // x축 스크롤 복구
+          document.body.classList.remove("loading");
+        }, 3000); // 3초 후 로딩 종료
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const masks = document.querySelectorAll("[id^='text-mask-svg']");
+
+        masks.forEach((mask, index) => {
+          const sectionNumber = index + 1;
+          const iframe = document.querySelector(
+            `#youtubePlayer${sectionNumber}`
+          );
+          const textElement = mask.querySelector("text"); // 텍스트 요소 선택
+
+          if (iframe && textElement) {
+            textElement.style.pointerEvents = "auto";
+            textElement.style.cursor = "pointer";
+
+            textElement.addEventListener("click", function () {
+              iframe.classList.toggle("hidden"); // 표시/숨김 토글
+            });
+          }
+        });
+      });
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

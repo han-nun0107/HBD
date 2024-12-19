@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="생일 축하해!" />
+    <!--  <meta property="og:url" content="kimquokka.dothome.co.kr" /> -->
+    <meta property="og:image" content="./asset/img/ogImg.png" />
+    <meta property="og:description" content="madeBy han_nun" />
+    <title>POP</title>
+    <link
+      href="https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="asset/img/pop.png" />
+
+    <!-- GSAP와 플러그인 로드 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <!-- 스타일 -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slide.css" />
+    <link rel="stylesheet" href="css/pop.css" />
+  </head>
+  <body>
+    <!-- 실제 콘텐츠 -->
+    <header class="header">
+      <nav>
+        <div class="logo">
+          <a href="main.html">
+            <img src="asset/img/Logo.png" draggable="false" alt="pageLogo" />
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li class="underLine">
+            <a href="https://ch.sooplive.co.kr/quokka1228" target="_blank"
+              >SOOP</a
+            >
+          </li>
+          <li class="underLine">
+            <a href="https://www.youtube.com/@김쿼카_1228" target="_blank"
+              >YOUTUBE</a
+            >
+          </li>
+          <li class="underLine">
+            <a href="https://ch.sooplive.co.kr/quokka1228/post/115330079"
+              >PROFILE + LINK</a
+            >
+          </li>
+          <li class="underLine">
+            <a href="song.html">노래 추천</a>
+          </li>
+          <li class="underLine">
+            <a href="#">CAFE였던것</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- 메인 섹션 -->
+    <main id="parallax__cont">
+      <section
+        id="section1"
+        class="parallax__item"
+        style="
+          background-image: url(./asset/img/popBG.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div class="music">
+          <a href="index.html" id="main-p">메인 페이지</a>
+          <a href="q-pop.html" id="q-pop-p">쿼카 노래, 클립</a>
+          <a href="k-pop.html" id="k-pop-p">K-POP</a>
+          <a href="j-pop.html" id="j-pop-p">J-POP</a>
+        </div>
+      </section>
+      <!-- //section1 -->
+
+      <section id="section2" class="parallax__item">
+        <div class="split-container">
+          <!-- 왼쪽 섹션 -->
+          <div class="left-section">
+            <svg
+              id="text-mask-svg1"
+              class="text-mask-svg1"
+              viewBox="0 0 800 650"
+              preserveAspectRatio="none"
+              width="100%"
+              height="100%"
+            >
+              <defs>
+                <clipPath id="text-mask1">
+                  <text
+                    x="50%"
+                    y="50%"
+                    dy=".35em"
+                    text-anchor="middle"
+                    id="text-element1"
+                    class="toggle-text"
+                  >
+                    H
+                  </text>
+                </clipPath>
+              </defs>
+              <foreignObject
+                width="100%"
+                height="100%"
+                clip-path="url(#text-mask1)"
+              >
+                <video
+                  class="video"
+                  id="video-element1"
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                >
+                  <source src="asset/video/Fire on Up.mp4" type="video/mp4" />
+                </video>
+              </foreignObject>
+            </svg>
+          </div>
+          <div class="right-section">
+            <p id="section2-p">
+              <span class="title">Fire on Up</span><br />
+              <span class="subtitle">Paper Kings</span><br />
+              <span class="lyrics"
+                >"Fire on Up"은 개인의 내면에 잠재된 힘을 일깨우고, 팀과 함께
+                어려움을 극복하며 목표를 향해 나아가자는 강력한 메시지를 담고
+                있습니다. <br />
+                <br />가사는 두려움과 고통을 연료 삼아 성장하고, 압박 속에서도
+                빛을 발하겠다는 결의를 표현합니다. <br />
+                <br />이 곡은 청자에게 자신감을 불어넣고, 도전과 역경에 맞서
+                싸울 용기를 주는 응원가로서의 역할을 합니다</span
+              >
+            </p>
+            <img src="asset/img/P-QOK6.png" alt="" class="quo-k" />
+          </div>
+        </div>
+
+        <!-- 추가된 iframe과 배경 -->
+        <div class="video_bg" id="videoBg1">
+          <iframe
+            id="youtubePlayer1"
+            class="video-iframe iframe"
+            src="https://www.youtube.com/embed/HsEqbmTYT2M?enablejsapi=1&mute=1&autoplay=1&controls=0&cc_load_policy=0&cc_lang_pref=x&fs=1"
+            frameborder="0"
+            allow="autoplay; fullscreen; encrypted-media; pointer-events"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <!-- //section2 -->
+
+      <section id="section3" class="parallax__item">
+        <div class="split-container">
+          <!-- 왼쪽 섹션 -->
+          <div class="left-section">
+            <svg
+              viewBox="0 0 800 650"
+              class="text-mask-svg2"
+              id="text-mask-svg2"
+              preserveAspectRatio="none"
+              width="100%"
+              height="100%"
+            >
+              <defs>
+                <clipPath id="text-mask2">
+                  <text
+                    x="50%"
+                    y="50%"
+                    dy=".35em"
+                    text-anchor="middle"
+                    id="text-element2"
+                  >
+                    B
+                  </text>
+                </clipPath>
+              </defs>
+              <foreignObject
+                width="100%"
+                height="100%"
+                clip-path="url(#text-mask2)"
+              >
+                <video
+                  class="video"
+                  id="video-element2"
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                >
+                  <source src="asset/video/247, 365.mp4" type="video/mp4" />
+                </video>
+              </foreignObject>
+            </svg>
+          </div>
+          <!-- 오른쪽 섹션 -->
+          <div class="right-section">
+            <p id="section3-p">
+              <span class="title">24/7, 365</span><br />
+              <span class="subtitle">Elijah Woods</span><br />
+              <span class="lyrics"
+                >"24/7, 365"는 연인에 대한 변함없는 사랑과 헌신을 시간의 흐름과
+                함께 표현한 곡입니다. 숫자를 활용한 가사는 사랑의 지속성과
+                깊이를 강조하며, 일상 속에서 함께하는 소중한 순간들을 담담하게
+                그려냅니다. Elijah Woods는 이 곡을 통해 사랑의 아름다움과 그로
+                인한 행복을 진솔하게 전달하며, 듣는 이로 하여금 자신의 사랑을
+                돌아보게 만듭니다. <br /><br />
+                이 곡은 사랑하는 사람과 함께하는 일상의 소중함과, 그들과
+                함께하고자 하는 미래에 대한 다짐을 담고 있어, 연인들에게 큰
+                공감을 불러일으킬 것입니다.</span
+              >
+            </p>
+            <img src="asset/img/P-QOK1.png" alt="" class="quo-k" />
+          </div>
+        </div>
+
+        <!-- 추가적인 콘텐츠, 클릭 동영상 -->
+        <div class="video_bg" id="videoBg2">
+          <iframe
+            id="youtubePlayer2"
+            class="video-iframe iframe"
+            src="https://www.youtube.com/embed/-h_yBTriuaY?enablejsapi=1&mute=1&autoplay=1&controls=0&cc_load_policy=0&cc_lang_pref=x&fs=1"
+            frameborder="0"
+            allow="autoplay; fullscreen; encrypted-media"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- //section3 -->
+
+      <section id="section4" class="parallax__item">
+        <div class="split-container">
+          <!-- 왼쪽 섹션 -->
+          <div class="left-section">
+            <svg
+              viewBox="0 0 800 650"
+              class="text-mask-svg3"
+              id="text-mask-svg3"
+              preserveAspectRatio="none"
+              width="100%"
+              height="100%"
+            >
+              <defs>
+                <clipPath id="text-mask3">
+                  <text
+                    x="50%"
+                    y="50%"
+                    dy=".35em"
+                    text-anchor="middle"
+                    id="text-element3"
+                  >
+                    D
+                  </text>
+                </clipPath>
+              </defs>
+              <foreignObject
+                width="100%"
+                height="100%"
+                clip-path="url(#text-mask3)"
+              >
+                <video id="video-element3" autoplay loop muted playsinline>
+                  <source
+                    src="asset/video/Leave a Light On.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </foreignObject>
+            </svg>
+          </div>
+          <!-- 오른쪽 섹션 -->
+          <div class="right-section">
+            <p id="section4-p">
+              <span class="title">Leave a Light On</span><br />
+              <span class="subtitle">Tom Walker</span><br />
+              <span class="lyrics"
+                >"Leave a Light On"은 사랑하는 사람의 어려움을 지켜보며 그들을
+                위해 끝까지 기다리고, 희망을 비춰 주겠다는 약속의 곡입니다. 가사
+                속의 "불빛"은 희망, 사랑, 그리고 지지를 상징하며, 절망 속에서도
+                항상 돌아올 수 있는 따뜻한 안식처가 있다는 메시지를 전달합니다.
+                <br /><br />
+                이 곡은 단순히 사랑 이야기뿐만 아니라, 친구, 가족, 혹은 소중한
+                누군가를 위한 무조건적인 지지와 헌신의 노래로도 들릴 수
+                있습니다. Tom Walker는 이 곡을 통해 희망과 연대의 중요성을
+                감동적으로 표현하고 있습니다.</span
+              >
+            </p>
+            <img src="asset/img/P-QOK2.png" alt="" class="quo-k" />
+          </div>
+        </div>
+
+        <!-- 추가적인 콘텐츠, 클릭 동영상 -->
+        <div class="video_bg" id="videoBg3">
+          <iframe
+            id="youtubePlayer3"
+            class="video-iframe"
+            src="https://www.youtube.com/embed/zMbvUyRa1Jw?enablejsapi=1&mute=1&autoplay=1&controls=0&cc_load_policy=0&cc_lang_pref=x&fs=1"
+            frameborder="0"
+            allow="autoplay; fullscreen; encrypted-media"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <!-- //section4 -->
+
+      <section id="section5" class="parallax__item">
+        <div class="split-container">
+          <!-- 왼쪽 섹션 -->
+          <div class="left-section">
+            <svg
+              viewBox="0 0 800 650"
+              class="text-mask-svg4"
+              id="text-mask-svg4"
+              preserveAspectRatio="none"
+              width="100%"
+              height="100%"
+            >
+              <defs>
+                <clipPath id="text-mask4">
+                  <text
+                    x="50%"
+                    y="50%"
+                    dy=".35em"
+                    text-anchor="middle"
+                    id="text-element4"
+                  >
+                    Y
+                  </text>
+                </clipPath>
+              </defs>
+              <foreignObject
+                width="100%"
+                height="100%"
+                clip-path="url(#text-mask4)"
+              >
+                <video id="video-element4" autoplay loop muted playsinline>
+                  <source
+                    src="asset/video/Just Give Me A Reason.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </foreignObject>
+            </svg>
+          </div>
+          <!-- 오른쪽 섹션 -->
+          <div class="right-section">
+            <p id="section5-p">
+              <span class="title">Just Give Me a Reason (feat. Nate Ruess)</span
+              ><br />
+              <span class="subtitle">P!NK</span><br />
+              <span class="lyrics"
+                >"Just Give Me a Reason"은 관계의 위기를 극복하고, 다시 사랑을
+                이어가려는 두 사람의 진솔한 대화를 그린 곡입니다. 사랑이
+                위태로울 때 포기하는 대신, 서로의 진심을 확인하고 다시
+                일어서려는 메시지가 담겨 있습니다. <br /><br />
+                이 곡은 단순히 이별에 관한 이야기가 아니라, 사랑이 얼마나 노력과
+                신뢰를 필요로 하는지를 보여줍니다. 또한, 관계의 어려움을
+                해결하기 위해서는 서로의 관점과 감정을 이해하는 소통의 중요성을
+                강조합니다</span
+              >
+            </p>
+            <img src="asset/img/P-QOK3.png" alt="" class="quo-k" />
+          </div>
+        </div>
+
+        <!-- 추가적인 콘텐츠, 클릭 동영상 -->
+        <div class="video_bg" id="videoBg4">
+          <iframe
+            id="youtubePlayer4"
+            class="video-iframe"
+            src="https://www.youtube.com/embed/OpQFFLBMEPI?enablejsapi=1&mute=1&autoplay=1&controls=0&cc_load_policy=0&cc_lang_pref=x&fs=1"
+            frameborder="0"
+            allow="autoplay; fullscreen; encrypted-media"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <!-- //section5 -->
+
+      <section id="section6" class="parallax__item">
+        <div class="split-container">
+          <!-- 왼쪽 섹션 -->
+          <div class="left-section">
+            <svg
+              viewBox="0 0 800 650"
+              class="text-mask-svg5"
+              id="text-mask-svg5"
+              preserveAspectRatio="none"
+              width="100%"
+              height="100%"
+            >
+              <defs>
+                <clipPath id="text-mask5">
+                  <text
+                    x="50%"
+                    y="50%"
+                    dy=".35em"
+                    text-anchor="middle"
+                    id="text-element5"
+                  >
+                    O
+                  </text>
+                </clipPath>
+              </defs>
+              <foreignObject
+                width="100%"
+                height="100%"
+                clip-path="url(#text-mask5)"
+              >
+                <video id="video-element5" autoplay loop muted playsinline>
+                  <source src="asset/video/2 Soon.mp4" type="video/mp4" />
+                </video>
+              </foreignObject>
+            </svg>
+          </div>
+          <!-- 오른쪽 섹션 -->
+          <div class="right-section">
+            <p id="section6-p">
+              <span class="title">2 soon</span><br />
+              <span class="subtitle">keshi</span><br />
+              <span class="lyrics"
+                >"2 soon"은 이별 후 느끼는 복합적인 감정을 진솔하게 담아낸
+                곡입니다. Keshi는 상실과 후회, 그리고 그 속에서 벗어나려는
+                인간적인 시도를 사실적으로 표현하며, 누구나 공감할 수 있는
+                보편적인 이야기를 전달합니다. <br /><br />
+                이 곡은 "이별 후의 치유는 쉽지 않으며, 때로는 상처를 받아들이고
+                시간이 지나야만 아물 수 있다"는 메시지를 내포하고 있습니다.
+                Keshi 특유의 섬세한 감정 표현과 잔잔한 멜로디는 이러한 메시지를
+                더욱 강렬하게 느끼게 합니다.</span
+              >
+            </p>
+            <img src="asset/img/P-QOK4.png" alt="" class="quo-k" />
+          </div>
+        </div>
+
+        <!-- 추가적인 콘텐츠, 클릭 동영상 -->
+        <div class="video_bg" id="videoBg5">
+          <iframe
+            id="youtubePlayer5"
+            class="video-iframe"
+            src="https://www.youtube.com/embed/5AoPgDB4LcM?enablejsapi=1&mute=1&autoplay=1&controls=0&cc_load_policy=0&cc_lang_pref=x&fs=1"
+            frameborder="0"
+            allow="autoplay; fullscreen; encrypted-media"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <!-- //section6 -->
+
+      <section id="section7" class="parallax__item">
+        <div class="split-container">
+          <!-- 왼쪽 섹션 -->
+          <div class="left-section">
+            <svg
+              viewBox="0 0 800 650"
+              class="text-mask-svg6"
+              id="text-mask-svg6"
+              preserveAspectRatio="none"
+              width="100%"
+              height="100%"
+            >
+              <defs>
+                <clipPath id="text-mask6">
+                  <text
+                    x="50%"
+                    y="50%"
+                    dy=".35em"
+                    text-anchor="middle"
+                    id="text-element6"
+                  >
+                    U
+                  </text>
+                </clipPath>
+              </defs>
+              <foreignObject
+                width="100%"
+                height="100%"
+                clip-path="url(#text-mask6)"
+              >
+                <video id="video-element6" autoplay loop muted playsinline>
+                  <source
+                    src="asset/video/Something In The Way.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </foreignObject>
+            </svg>
+          </div>
+          <!-- 오른쪽 섹션 -->
+          <div class="right-section">
+            <p id="section7-p">
+              <span class="title">Something In The Way</span><br />
+              <span class="subtitle">Jake Cornell</span><br />
+              <span class="lyrics"
+                >"Something In The Way"는 연인 사이에 생긴 보이지 않는 장벽으로
+                인해 관계가 소원해지는 과정을 섬세하게 그린 곡입니다. 가사는
+                감정적 거리와 소통의 부재로 인한 갈등을 표현하며, 이러한
+                상황에서 느끼는 혼란과 아쉬움을 담고 있습니다. Jake Cornell은 이
+                곡을 통해 관계에서의 소통과 이해의 중요성을 강조하며, 감정적
+                거리를 좁히기 위한 노력이 필요하다는 메시지를 전달합니다.</span
+              >
+            </p>
+            <img src="asset/img/P-QOK5.png" alt="" class="quo-k" />
+          </div>
+        </div>
+
+        <!-- 추가적인 콘텐츠, 클릭 동영상 -->
+        <div class="video_bg" id="videoBg6">
+          <iframe
+            id="youtubePlayer6"
+            class="video-iframe"
+            src="https://www.youtube.com/embed/XVPqxBlrepE?enablejsapi=1&mute=1&autoplay=1&controls=0&cc_load_policy=0&cc_lang_pref=x&fs=1"
+            frameborder="0"
+            allow="autoplay; fullscreen; encrypted-media"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <!-- //section7 -->
+
+      <section id="section8" class="parallax__item">
+        <div>
+          <p class="thx"></p>
+          <div class="lastBtn">
+            <a href="main.html" class="button">메인 페이지 가기</a>
+            <a href="song.html" class="button">노래 페이지 가기</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- <script src="js/youtube.js"></script> -->
+    <!-- <script src="js/slide.js"></script>
+    <script src="js/section.js"></script>
+    <script src="js/multiple-text.js"></script> -->
+
+    <!-- <script src="js/btnSetting.js"></script> -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const loadingPage = document.getElementById("loading-page");
+
+        // 로딩 상태에서 x축 스크롤 잠금
+        document.body.classList.add("loading");
+
+        // 로딩이 끝난 후 처리
+        setTimeout(() => {
+          // 로딩 페이지 숨기기
+          loadingPage.style.display = "none";
+
+          // x축 스크롤 복구
+          document.body.classList.remove("loading");
+        }, 3000); // 3초 후 로딩 종료
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const masks = document.querySelectorAll("[id^='text-mask-svg']");
+
+        masks.forEach((mask, index) => {
+          const sectionNumber = index + 1;
+          const iframe = document.querySelector(
+            `#youtubePlayer${sectionNumber}`
+          );
+          const textElement = mask.querySelector("text"); // 텍스트 요소 선택
+
+          if (iframe && textElement) {
+            textElement.style.pointerEvents = "auto";
+            textElement.style.cursor = "pointer";
+
+            textElement.addEventListener("click", function () {
+              iframe.classList.toggle("hidden"); // 표시/숨김 토글
+            });
+          }
+        });
+      });
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

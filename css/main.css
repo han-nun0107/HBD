@@ -1,0 +1,529 @@
+@import url(https://fonts.googleapis.com/css?family=Monoton);
+@import url(https://fonts.googleapis.com/css?family=Great+Vibes);
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+main {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bg {
+  background-image: url(https://raw.githubusercontent.com/interaminense/repository-codepen/master/neon-codepen/bg-neon.jpg);
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: 1250px;
+  opacity: 0.3;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.no-drag {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  pointer-events: none;
+}
+
+.no-drag span,
+.no-drag h1 {
+  -webkit-user-drag: none;
+}
+
+.wrapper {
+  position: absolute;
+  width: auto;
+  height: 150px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.wrapper h1 {
+  font-size: 100px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.wrapper h2 {
+  font-size: 50px;
+  margin: 0;
+  font-weight: normal;
+  line-height: 10px;
+}
+
+.font1 {
+  font-family: "Monoton", cursive;
+}
+
+.font2 {
+  font-family: "Great Vibes", cursive;
+}
+
+.font3 {
+  font-family: "Spoqa Han Sans Neo";
+}
+
+.clickable {
+  pointer-events: auto; /* 클릭 이벤트 허용 */
+  cursor: pointer; /* 포인터 커서 표시 */
+}
+
+.input-text {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 280px;
+  padding: 5px 20px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: "Monoton", cursive;
+  font-size: 35px;
+  box-shadow: 15px 15px 23px rgba(0, 0, 0, 0.2);
+  outline: none;
+  z-index: 1;
+}
+
+.buttons {
+  position: absolute;
+  z-index: 1;
+  right: 20px;
+  top: 20px;
+}
+
+.buttons button {
+  float: left;
+  border: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  margin-right: 10px;
+  padding: 0;
+  cursor: pointer;
+}
+
+button.btn-pink {
+  background-color: #e91e63;
+}
+
+button.btn-yellow {
+  background-color: #ffc107;
+}
+
+button.btn-green {
+  background-color: #8bc34a;
+}
+
+button.btn-blue {
+  background-color: #03a9f4;
+}
+
+main.pink {
+  animation: bgNeon-1 3s infinite;
+}
+main.pink .input-text {
+  color: #e91e63;
+}
+main.pink .wrapper h1 {
+  animation: neon2-1 3s infinite;
+}
+main.pink .wrapper h2 {
+  text-shadow: 0 0 10px #e91e63, 0 0 30px rgb(233, 30, 200.5);
+  color: #e91e63;
+}
+@keyframes neon2-1 {
+  0% {
+    color: #e91e63;
+    text-shadow: 0 0 10px #e91e63,
+      1px 1px rgb(246.6275303644, 169.3724696356, 195.6315789474),
+      0 0 280px rgb(233, 30, 200.5);
+  }
+  80% {
+    color: #e91e63;
+    text-shadow: 0 0 10px #e91e63,
+      1px 1px rgb(246.6275303644, 169.3724696356, 195.6315789474),
+      0 0 280px rgb(233, 30, 200.5);
+  }
+  81% {
+    color: #222;
+    text-shadow: 0 0 10px #000, 1px 1px rgb(99, 74, 82), -2px 0px 4px #29121a;
+  }
+  94% {
+    color: #222;
+    text-shadow: 0 0 10px #000, 1px 1px rgb(99, 74, 82), -2px 0px 4px #29121a;
+  }
+  95% {
+    color: #e91e63;
+    text-shadow: 0 0 10px #e91e63,
+      1px 1px rgb(246.6275303644, 169.3724696356, 195.6315789474),
+      0 0 280px rgb(233, 30, 200.5);
+  }
+  96% {
+    color: #222;
+    text-shadow: 0 0 10px #000, 1px 1px rgb(99, 74, 82), -2px 0px 4px #29121a;
+  }
+  97% {
+    color: #e91e63;
+    text-shadow: 0 0 10px #e91e63,
+      1px 1px rgb(246.6275303644, 169.3724696356, 195.6315789474),
+      0 0 280px rgb(233, 30, 200.5);
+  }
+  98% {
+    color: #e91e63;
+    text-shadow: 0 0 10px #e91e63,
+      1px 1px rgb(246.6275303644, 169.3724696356, 195.6315789474),
+      0 0 280px rgb(233, 30, 200.5);
+  }
+  99% {
+    color: #222;
+    text-shadow: 0 0 10px #000, 1px 1px rgb(99, 74, 82), -2px 0px 4px #29121a;
+  }
+  100% {
+    color: #e91e63;
+    text-shadow: 0 0 10px #e91e63,
+      1px 1px rgb(246.6275303644, 169.3724696356, 195.6315789474),
+      0 0 280px rgb(233, 30, 200.5);
+  }
+}
+@keyframes bgNeon-1 {
+  0% {
+    background-color: rgb(53.7449392713, 5.2550607287, 45.9817813765);
+  }
+  80% {
+    background-color: rgb(53.7449392713, 5.2550607287, 45.9817813765);
+  }
+  81% {
+    background-color: #111;
+  }
+  94% {
+    background-color: #111;
+  }
+  95% {
+    background-color: rgb(53.7449392713, 5.2550607287, 45.9817813765);
+  }
+  96% {
+    background-color: #111;
+  }
+  97% {
+    background-color: rgb(53.7449392713, 5.2550607287, 45.9817813765);
+  }
+  98% {
+    background-color: rgb(53.7449392713, 5.2550607287, 45.9817813765);
+  }
+  99% {
+    background-color: #111;
+  }
+  100% {
+    background-color: rgb(53.7449392713, 5.2550607287, 45.9817813765);
+  }
+}
+
+main.yellow {
+  animation: bgNeon-2 3s infinite;
+}
+main.yellow .input-text {
+  color: #ffc107;
+}
+main.yellow .wrapper h1 {
+  animation: neon2-2 3s infinite;
+}
+main.yellow .wrapper h2 {
+  text-shadow: 0 0 10px #ffc107, 0 0 30px #ff4507;
+  color: #ffc107;
+}
+@keyframes neon2-2 {
+  0% {
+    color: #ffc107;
+    text-shadow: 0 0 10px #ffc107, 1px 1px rgb(255, 231.25, 160),
+      0 0 280px #ff4507;
+  }
+  80% {
+    color: #ffc107;
+    text-shadow: 0 0 10px #ffc107, 1px 1px rgb(255, 231.25, 160),
+      0 0 280px #ff4507;
+  }
+  81% {
+    color: #222;
+    text-shadow: 0 0 10px #000, 1px 1px rgb(99, 74, 82), -2px 0px 4px #29121a;
+  }
+  94% {
+    color: #222;
+    text-shadow: 0 0 10px #000, 1px 1px rgb(99, 74, 82), -2px 0px 4px #29121a;
+  }
+  95% {
+    color: #ffc107;
+    text-shadow: 0 0 10px #ffc107, 1px 1px rgb(255, 231.25, 160),
+      0 0 280px #ff4507;
+  }
+  96% {
+    color: #222;
+    text-shadow: 0 0 10px #000, 1px 1px rgb(99, 74, 82), -2px 0px 4px #29121a;
+  }
+  97% {
+    color: #ffc107;
+    text-shadow: 0 0 10px #ffc107, 1px 1px rgb(255, 231.25, 160),
+      0 0 280px #ff4507;
+  }
+  98% {
+    color: #ffc107;
+    text-shadow: 0 0 10px #ffc107, 1px 1px rgb(255, 231.25, 160),
+      0 0 280px #ff4507;
+  }
+  99% {
+    color: #222;
+    text-shadow: 0 0 10px #000, 1px 1px rgb(99, 74, 82), -2px 0px 4px #29121a;
+  }
+  100% {
+    color: #ffc107;
+    text-shadow: 0 0 10px #ffc107, 1px 1px rgb(255, 231.25, 160),
+      0 0 280px #ff4507;
+  }
+}
+@keyframes bgNeon-2 {
+  0% {
+    background-color: rgb(58, 14.5, 0);
+  }
+  80% {
+    background-color: rgb(58, 14.5, 0);
+  }
+  81% {
+    background-color: #111;
+  }
+  94% {
+    background-color: #111;
+  }
+  95% {
+    background-color: rgb(58, 14.5, 0);
+  }
+  96% {
+    background-color: #111;
+  }
+  97% {
+    background-color: rgb(58, 14.5, 0);
+  }
+  98% {
+    background-color: rgb(58, 14.5, 0);
+  }
+  99% {
+    background-color: #111;
+  }
+  100% {
+    background-color: rgb(58, 14.5, 0);
+  }
+}
+
+main.green {
+  animation: bgNeon-3 3s infinite;
+}
+main.green .input-text {
+  color: #8bc34a;
+}
+main.green .wrapper h1 {
+  animation: neon2-3 3s infinite;
+}
+main.green .wrapper h2 {
+  text-shadow: 0 0 10px #8bc34a, 0 0 30px rgb(195, 190.5, 74);
+  color: #8bc34a;
+}
+@keyframes neon2-3 {
+  0% {
+    color: #8bc34a;
+    text-shadow: 0 0 10px #8bc34a,
+      1px 1px rgb(212.643153527, 233.0912863071, 188.9087136929),
+      0 0 280px rgb(195, 190.5, 74);
+  }
+  80% {
+    color: #8bc34a;
+    text-shadow: 0 0 10px #8bc34a,
+      1px 1px rgb(212.643153527, 233.0912863071, 188.9087136929),
+      0 0 280px rgb(195, 190.5, 74);
+  }
+  81% {
+    color: #222;
+    text-shadow: 0 0 10px #000, 1px 1px rgb(99, 74, 82), -2px 0px 4px #29121a;
+  }
+  94% {
+    color: #222;
+    text-shadow: 0 0 10px #000, 1px 1px rgb(99, 74, 82), -2px 0px 4px #29121a;
+  }
+  95% {
+    color: #8bc34a;
+    text-shadow: 0 0 10px #8bc34a,
+      1px 1px rgb(212.643153527, 233.0912863071, 188.9087136929),
+      0 0 280px rgb(195, 190.5, 74);
+  }
+  96% {
+    color: #222;
+    text-shadow: 0 0 10px #000, 1px 1px rgb(99, 74, 82), -2px 0px 4px #29121a;
+  }
+  97% {
+    color: #8bc34a;
+    text-shadow: 0 0 10px #8bc34a,
+      1px 1px rgb(212.643153527, 233.0912863071, 188.9087136929),
+      0 0 280px rgb(195, 190.5, 74);
+  }
+  98% {
+    color: #8bc34a;
+    text-shadow: 0 0 10px #8bc34a,
+      1px 1px rgb(212.643153527, 233.0912863071, 188.9087136929),
+      0 0 280px rgb(195, 190.5, 74);
+  }
+  99% {
+    color: #222;
+    text-shadow: 0 0 10px #000, 1px 1px rgb(99, 74, 82), -2px 0px 4px #29121a;
+  }
+  100% {
+    color: #8bc34a;
+    text-shadow: 0 0 10px #8bc34a,
+      1px 1px rgb(212.643153527, 233.0912863071, 188.9087136929),
+      0 0 280px rgb(195, 190.5, 74);
+  }
+}
+@keyframes bgNeon-3 {
+  0% {
+    background-color: rgb(48.8174273859, 47.6037344398, 16.1825726141);
+  }
+  80% {
+    background-color: rgb(48.8174273859, 47.6037344398, 16.1825726141);
+  }
+  81% {
+    background-color: #111;
+  }
+  94% {
+    background-color: #111;
+  }
+  95% {
+    background-color: rgb(48.8174273859, 47.6037344398, 16.1825726141);
+  }
+  96% {
+    background-color: #111;
+  }
+  97% {
+    background-color: rgb(48.8174273859, 47.6037344398, 16.1825726141);
+  }
+  98% {
+    background-color: rgb(48.8174273859, 47.6037344398, 16.1825726141);
+  }
+  99% {
+    background-color: #111;
+  }
+  100% {
+    background-color: rgb(48.8174273859, 47.6037344398, 16.1825726141);
+  }
+}
+
+main.blue {
+  animation: bgNeon-4 3s infinite;
+}
+main.blue .input-text {
+  color: #03a9f4;
+}
+main.blue .wrapper h1 {
+  animation: neon2-4 3s infinite;
+}
+main.blue .wrapper h2 {
+  text-shadow: 0 0 10px #03a9f4, 0 0 30px rgb(3, 244, 198.5);
+  color: #03a9f4;
+}
+@keyframes neon2-4 {
+  0% {
+    color: #03a9f4;
+    text-shadow: 0 0 10px #03a9f4,
+      1px 1px rgb(146.3360323887, 220.2631578947, 253.6639676113),
+      0 0 280px rgb(3, 244, 198.5);
+  }
+  80% {
+    color: #03a9f4;
+    text-shadow: 0 0 10px #03a9f4,
+      1px 1px rgb(146.3360323887, 220.2631578947, 253.6639676113),
+      0 0 280px rgb(3, 244, 198.5);
+  }
+  81% {
+    color: #222;
+    text-shadow: 0 0 10px #000, 1px 1px rgb(99, 74, 82), -2px 0px 4px #29121a;
+  }
+  94% {
+    color: #222;
+    text-shadow: 0 0 10px #000, 1px 1px rgb(99, 74, 82), -2px 0px 4px #29121a;
+  }
+  95% {
+    color: #03a9f4;
+    text-shadow: 0 0 10px #03a9f4,
+      1px 1px rgb(146.3360323887, 220.2631578947, 253.6639676113),
+      0 0 280px rgb(3, 244, 198.5);
+  }
+  96% {
+    color: #222;
+    text-shadow: 0 0 10px #000, 1px 1px rgb(99, 74, 82), -2px 0px 4px #29121a;
+  }
+  97% {
+    color: #03a9f4;
+    text-shadow: 0 0 10px #03a9f4,
+      1px 1px rgb(146.3360323887, 220.2631578947, 253.6639676113),
+      0 0 280px rgb(3, 244, 198.5);
+  }
+  98% {
+    color: #03a9f4;
+    text-shadow: 0 0 10px #03a9f4,
+      1px 1px rgb(146.3360323887, 220.2631578947, 253.6639676113),
+      0 0 280px rgb(3, 244, 198.5);
+  }
+  99% {
+    color: #222;
+    text-shadow: 0 0 10px #000, 1px 1px rgb(99, 74, 82), -2px 0px 4px #29121a;
+  }
+  100% {
+    color: #03a9f4;
+    text-shadow: 0 0 10px #03a9f4,
+      1px 1px rgb(146.3360323887, 220.2631578947, 253.6639676113),
+      0 0 280px rgb(3, 244, 198.5);
+  }
+}
+@keyframes bgNeon-4 {
+  0% {
+    background-color: rgb(0.5222672065, 42.4777327935, 34.5566801619);
+  }
+  80% {
+    background-color: rgb(0.5222672065, 42.4777327935, 34.5566801619);
+  }
+  81% {
+    background-color: #111;
+  }
+  94% {
+    background-color: #111;
+  }
+  95% {
+    background-color: rgb(0.5222672065, 42.4777327935, 34.5566801619);
+  }
+  96% {
+    background-color: #111;
+  }
+  97% {
+    background-color: rgb(0.5222672065, 42.4777327935, 34.5566801619);
+  }
+  98% {
+    background-color: rgb(0.5222672065, 42.4777327935, 34.5566801619);
+  }
+  99% {
+    background-color: #111;
+  }
+  100% {
+    background-color: rgb(0.5222672065, 42.4777327935, 34.5566801619);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

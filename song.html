@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="생일 축하해!" />
+    <!--  <meta property="og:url" content="kimquokka.dothome.co.kr" /> -->
+    <meta property="og:image" content="./asset/img/ogImg.png" />
+    <meta property="og:description" content="madeBy han_nun" />
+    <title>Song</title>
+    <link
+      href="https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+    />
+    <!-- 스타일 -->
+    <link rel="stylesheet" href="css/music.css" />
+  </head>
+  <body>
+    <!-- 로딩 페이지 -->
+    <div id="loading-page1">
+      <div class="spinner"></div>
+      <div class="loading-div">
+        <p class="loading-p">로딩 중</p>
+        <p class="loading-p">조금만 기다려 주세요.</p>
+      </div>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+    </div>
+
+    <!-- 실제 콘텐츠 -->
+    <header class="header">
+      <nav>
+        <div class="logo">
+          <a href="main.html">
+            <img src="asset/img/Logo.png" draggable="false" alt="pageLogo" />
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li class="underLine">
+            <a href="https://ch.sooplive.co.kr/quokka1228" target="_blank"
+              >SOOP</a
+            >
+          </li>
+          <li class="underLine">
+            <a href="https://www.youtube.com/@김쿼카_1228" target="_blank"
+              >YOUTUBE</a
+            >
+          </li>
+          <li class="underLine">
+            <a href="https://ch.sooplive.co.kr/quokka1228/post/115330079"
+              >PROFILE + LINK</a
+            >
+          </li>
+          <li class="underLine">
+            <a href="song.html">노래 추천</a>
+          </li>
+          <li class="underLine">
+            <a href="#">CAFE였던것</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="home">
+        <div class="video_bg back-video">
+          <iframe
+            id="youtubePlayer"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/XJQ1HdswQIs?autoplay=1&mute=1&controls=0&loop=1&playlist=XJQ1HdswQIs"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; muted; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <a href="q-pop.html" id="q-pop" class="music">쿼카 노래, 클립</a>
+          <a href="k-pop.html" id="k-pop" class="music">K-POP</a>
+          <a href="pop.html" id="pop" class="music">POP</a>
+          <a href="j-pop.html" id="j-pop" class="music">J-POP</a>
+          <a href="main.html" id="main" class="music">메인 페이지</a>
+        </div>
+      </section>
+    </main>
+    <!-- 메인 섹션 -->
+
+    <script src="js/script1.js"></script>
+  </body>
+</html>
