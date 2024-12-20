@@ -45,3 +45,19 @@ if ("serviceWorker" in navigator) {
 } else {
   console.warn("Service Worker is not supported by this browser."); // 브라우저 미지원 경고 로그
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const loadingPage = document.getElementById("loading-page");
+  const progressBar = document.querySelector(".progress");
+  if (loadingPage && progressBar) {
+    let progress = 0;
+    const interval = setInterval(() => {
+      progress += 5;
+      progressBar.style.width = `${progress}%`;
+      if (progress >= 100) {
+        clearInterval(interval);
+        loadingPage.style.opacity = "0";
+      }
+    }, 100);
+  }
+});
